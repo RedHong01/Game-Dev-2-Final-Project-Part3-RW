@@ -351,6 +351,7 @@
 "Assets/Code/GunController.cs"
 "Assets/Code/Lives.cs"
 "Assets/Code/MapGenerator.cs"
+"Assets/Code/NewBehaviourScript.cs"
 "Assets/Code/Player.cs"
 "Assets/Code/PlayerController.cs"
 "Assets/Code/PlayerLives.cs"
