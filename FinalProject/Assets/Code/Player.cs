@@ -15,7 +15,7 @@ public class Player : Lives
     [Header("Health Bar Settings")]
     public Image currentHealthImage;   // 实时血量条
     public Image delayHealthImage;     // 延迟血量条
-    public float delayTime = 1f;       // 延迟血量条的平滑时间
+    public float delayTime = 1f;       // 延迟血量条参数
 
     [Header("Player Movement")]
     public float moveSpeed = 5f;       // 玩家移动速度
@@ -113,7 +113,7 @@ public class Player : Lives
     {
         if (updateHealth != null)
         {
-            StopCoroutine(updateHealth); // 停止上一次协程
+            StopCoroutine(updateHealth); // 血条停止更新
         }
         updateHealth = StartCoroutine(UpdateEffectImage()); // 启动新的协程
     }
@@ -123,7 +123,7 @@ public class Player : Lives
         // 更新实时血量条
         currentHealthImage.fillAmount = currentHealth / startingHealth;
 
-        // 计算延迟条的差值
+        // 计算延迟条
         float length = (delayHealth - currentHealth) / startingHealth;
 
         // 平滑更新延迟血量条
@@ -139,7 +139,7 @@ public class Player : Lives
 
     private void AssignHealthBarObjects()
     {
-        // 在场景中查找名为 "Health" 的对象
+        
         GameObject healthObject = GameObject.Find("Health");
         if (healthObject != null)
         {
@@ -150,7 +150,7 @@ public class Player : Lives
             Debug.LogWarning("Health object not found in the scene!");
         }
 
-        // 在场景中查找名为 "Damage" 的对象
+        
         GameObject damageObject = GameObject.Find("Damage");
         if (damageObject != null)
         {
