@@ -937,3 +937,9 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+[usbmuxd] Detached: 20 00008132-000A593A3E69001C
+[usbmuxd] Detached: 20 00008132-000A593A3E69001C
+[usbmuxd] Attached: 21 00008140-001119980213001C
+[usbmuxd] Attached: 21 00008140-001119980213001C
+[usbmuxd] Detached: 21 00008140-001119980213001C
+[usbmuxd] Detached: 21 00008140-001119980213001C
